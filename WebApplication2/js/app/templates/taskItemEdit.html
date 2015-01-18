@@ -1,0 +1,7 @@
+﻿<form class="task-item" name="taskForm" ng-controller="TaskCtrl" ng-model="task" ng-submit="SaveTask(task,taskForm.$valid)">
+    <input name="Title" type="text" ng-model="task.Title" required ng-maxlength="50" ng-minlength="5" /><br />
+    <p ng-show="taskForm.Title.$invalid && !taskForm.Title.$pristine" class="help-block">Task Title needs to be over 5 characters</p>
+    <textarea name="Description" rows="3" cols="60" ng-model="task.Description" ng-maxlength="100"></textarea><br/>
+    <p ng-show="taskForm.Description.$invalid && !taskForm.Description.$pristine" class="help-block">Task Descrioption can only be up to 100 characters</p>
+    <button type="submit" ng-disabled="taskForm.$invalid">Create</button>
+</form>

@@ -1,0 +1,50 @@
+﻿<div class="col-sm-12 user-panel">
+    @if (Request.IsAuthenticated)
+    {
+        @Html.ActionLink("Log Out", "Logout", new { controller = "User" }, new { @Class = "loginbutton btn btn-warning" })<br />
+        <div class="username">@Html.Encode(User.Identity.Name)</div><br />
+
+    }
+    else
+    {
+        @Html.ActionLink("Log In", "Login", new { controller = "User" }, new { @Class = "loginbutton btn btn-primary" })<br />
+    }
+</div>
+
+@if (Request.IsAuthenticated)
+{      
+    <div ng-include="'/js/app/templates/MovieBanner.html'"></div>
+        <div ng-controller="TasksCtrl">
+            <div class="edit-panel" id="editpanel" ng-include="'/js/app/templates/taskItemEdit.html'"></div>
+            <div>
+                <div class="search-panel" id="searchpanel" ng-include="'/js/app/templates/taskList.html'"></div>
+            </div>
+        </div>
+        
+}
+
+@section scripts {
+    <!-- common functions -->
+    <script src="/js/app/FunctionLib.js"></script>
+
+    <!-- Angular gear -->
+    <script src="/js/app/main.js"></script>
+    <script src="/js/app/services/TaskService.js"></script>
+    <script src="/js/app/services/MovieBannerService.js"></script>
+    <script src="/js/app/controllers/TaskControllers.js"></script>
+    <script src="/js/app/controllers/footerController.js"></script>
+    <script src="/js/app/controllers/MovieBannerController.js"></script>
+    
+
+}
+
+@section footer{
+    @if (Request.IsAuthenticated)
+    {
+       <div class="footer-panel" id="footerpanel" ng-include="'/js/app/templates/footerItem.html'"></div>
+    }
+}
+
+
+
+

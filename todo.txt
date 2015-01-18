@@ -1,0 +1,43 @@
+
+Task List Web App
+
+Our customer has a requirement for a Task List Web Application to enable their end Users to track activities. 
+End users will access the application using a web browser on clients with varying screen sizes / resolutions, 
+such as PCs and Touchscreen devices.
+
+
+- Consistent style
+- Hand crafted CSS + styling framework
+* Rich user experience
+* HTML5
+* All Code testable
+	/ Javascript
+	/ C#
+
+* secure username/password
+* At least two different users should be able to login and view tasks
+
+* Header
+	- Current User
+	- logout/login
+* Footer with tasks remaining
+* Responsive
+
+/ Task Item
+	Title (req, 5,50)
+	Description (opt, 0, 100)
+	CreatedDate (req)
+	ModifiedDate (req)
+	State (req) (Active, Completed, Archived)
+* All edits to be done via ajax
+
+- Client side API
+	o	Cycle through ten movies of your choice from IMDB API : http://www.omdbapi.com/
+	o	Display one of these movies every ten seconds, showing:
+	•	Title
+	•	Release Date
+	•	Director
+
+
+
+

@@ -1,0 +1,13 @@
+﻿<div ng-controller="MovieBannerCtrl" class="carousel-container">
+    <div style="height:200px">
+        <carousel interval="conf.interval">
+            <slide ng-repeat="movie in conf.movies" active="slide.active">
+                <img ng-src="{{movie.Image}}" class="carousel-image"/>
+                <div class="carousel-caption">
+                    <p>{{movie.Title}}</p>
+                </div>
+            </slide>
+        </carousel>
+    </div>
+</div>
+

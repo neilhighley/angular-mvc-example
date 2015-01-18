@@ -1,0 +1,10 @@
+D:\_projects\visual studio 2013\Projects\WebApplication2\TaskListApp.Lib\bin\Debug\TaskListApp.Lib.dll.config
+D:\_projects\visual studio 2013\Projects\WebApplication2\TaskListApp.Lib\bin\Debug\TaskListApp.Lib.dll
+D:\_projects\visual studio 2013\Projects\WebApplication2\TaskListApp.Lib\bin\Debug\TaskListApp.Lib.pdb
+D:\_projects\visual studio 2013\Projects\WebApplication2\TaskListApp.Lib\bin\Debug\EntityFramework.dll
+D:\_projects\visual studio 2013\Projects\WebApplication2\TaskListApp.Lib\bin\Debug\EntityFramework.SqlServer.dll
+D:\_projects\visual studio 2013\Projects\WebApplication2\TaskListApp.Lib\bin\Debug\EntityFramework.xml
+D:\_projects\visual studio 2013\Projects\WebApplication2\TaskListApp.Lib\bin\Debug\EntityFramework.SqlServer.xml
+D:\_projects\visual studio 2013\Projects\WebApplication2\TaskListApp.Lib\obj\Debug\TaskListApp.Lib.dll
+D:\_projects\visual studio 2013\Projects\WebApplication2\TaskListApp.Lib\obj\Debug\TaskListApp.Lib.pdb
+D:\_projects\visual studio 2013\Projects\WebApplication2\TaskListApp.Lib\obj\Debug\TaskListApp.Lib.csprojResolveAssemblyReference.cache

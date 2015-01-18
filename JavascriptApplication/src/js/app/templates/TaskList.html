@@ -1,0 +1,13 @@
+﻿&nbsp;|&nbsp;<label for="search-active">{{counter.active}} Active </label> <input type="radio" id="search-active" name="search" ng-model="search.State" value="0" />
+&nbsp;|&nbsp;<label for="search-completed">{{counter.completed}} Completed </label> <input type="radio" id="search-completed" name="search" ng-model="search.State" value="1" />
+&nbsp;|&nbsp;<label for="search-archived">{{counter.archived}} Archived </label> <input type="radio" id="search-archived" name="search" ng-model="search.State" value="9" />
+&nbsp;|&nbsp;<label for="search-all">{{counter.all}} All</label> <input type="radio" name="search" id="search-all" ng-model="search.State" checked="checked" value="{{undefined}}" />
+&nbsp;||&nbsp;
+Order By:<a href="" ng-click="predicate='CreatedDate';reverse=false" ng-class="{'btn':predicate=='CreatedDate' && reverse=='false'}">Created</a>(<a href="" ng-class="{'btn':predicate=='CreatedDate' && reverse=='true'}" ng-click="predicate='CreatedDate';reverse=true">^</a>)
+&nbsp;|&nbsp;<a href="" ng-click="predicate='ModifiedDate';reverse=false">Modified</a>(<a href="" ng-click="predicate='ModifiedDate';reverse=true">^</a>)
+&nbsp;|&nbsp;<a href="" ng-click="predicate='Title';reverse=false">Title</a>(<a href="" ng-click="predicate='Title';reverse=true">^</a>)
+&nbsp;||&nbsp;{{predicate}} {{reverse==false?"Descending":"Ascending"}}
+
+<ul ng-repeat="task in alltasks | filter:search | orderBy:predicate:!reverse" class="taskList">
+    <li ng-include="'/js/app/templates/taskItem.html'"></li>
+</ul>

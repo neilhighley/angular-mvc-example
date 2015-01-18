@@ -1,0 +1,5 @@
+﻿<div class="task-item" ng-controller="TaskCtrl" ng-model="task">
+        <input type="text" cols="60" ng-model="task.Title" /><br />
+        <textarea rows="3" cols="60" ng-model="task.Description"></textarea>
+    <button ng-click="SaveTask(task)">Create</button>
+</div>

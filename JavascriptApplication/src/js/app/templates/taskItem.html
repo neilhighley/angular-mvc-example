@@ -1,0 +1,10 @@
+﻿<div class="task-item" ng-controller="TaskCtrl" ng-model="task">
+    <div class="btn-group-justified button-bar">
+        <button ng-click="TaskStatusUpdate(0,task)" id="btn_active" class="btn btn-task" ng-class="{'btn-primary':task.State==0}">Active</button>
+        <button ng-click="TaskStatusUpdate(1,task)" id="btn_complete" class="btn btn-task" ng-class="{'btn-primary':task.State==1}">Completed</button>
+        <button ng-click="TaskStatusUpdate(9,task)" id="btn_archived" class="btn btn-task" ng-class="{'btn-primary':task.State==9}">Stored</button>
+    </div>
+    <h1>{{task.Title}}</h1>
+    <p>{{task.Description}}</p>
+    <span>{{task.Id}} | Created:{{task.CreatedDate | date: 'short'}} | Modified:{{task.ModifiedDate| date: 'short'}}</span>
+</div>

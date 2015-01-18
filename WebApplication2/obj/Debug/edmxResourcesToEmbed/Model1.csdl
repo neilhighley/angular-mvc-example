@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Database1Model" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityContainer Name="Database1Entities1" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Tasks" EntityType="Database1Model.Task" />
+    <EntitySet Name="Users" EntityType="Database1Model.User" />
+    <AssociationSet Name="TaskUser" Association="Database1Model.TaskUser">
+      <End Role="Task" EntitySet="Tasks" />
+      <End Role="User" EntitySet="Users" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="Task">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Title" Type="String" Nullable="false" MaxLength="50" />
+    <Property Name="Description" Type="String" Nullable="true" MaxLength="100" />
+    <Property Name="CreatedDate" Type="DateTime" Nullable="false" />
+    <Property Name="ModifiedDate" Type="DateTime" Nullable="false" />
+    <Property Name="StateId" Type="Int16" Nullable="false" DefaultValue="0" />
+    <NavigationProperty Name="Users" Relationship="Database1Model.TaskUser" FromRole="Task" ToRole="User" />
+  </EntityType>
+  <EntityType Name="User">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Username" Type="String" Nullable="false" />
+    <Property Name="Password" Type="String" Nullable="false" />
+    <NavigationProperty Name="Tasks" Relationship="Database1Model.TaskUser" FromRole="User" ToRole="Task" />
+  </EntityType>
+  <Association Name="TaskUser">
+    <End Type="Database1Model.Task" Role="Task" Multiplicity="*" />
+    <End Type="Database1Model.User" Role="User" Multiplicity="*" />
+  </Association>
+</Schema>

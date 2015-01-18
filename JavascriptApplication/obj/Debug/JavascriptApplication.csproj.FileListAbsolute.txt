@@ -1,0 +1,6 @@
+D:\_projects\visual studio 2013\Projects\WebApplication2\JavascriptApplication\bin\JavascriptApplication.dll.config
+D:\_projects\visual studio 2013\Projects\WebApplication2\JavascriptApplication\bin\JavascriptApplication.dll
+D:\_projects\visual studio 2013\Projects\WebApplication2\JavascriptApplication\bin\JavascriptApplication.pdb
+D:\_projects\visual studio 2013\Projects\WebApplication2\JavascriptApplication\obj\Debug\JavascriptApplication.csprojResolveAssemblyReference.cache
+D:\_projects\visual studio 2013\Projects\WebApplication2\JavascriptApplication\obj\Debug\JavascriptApplication.dll
+D:\_projects\visual studio 2013\Projects\WebApplication2\JavascriptApplication\obj\Debug\JavascriptApplication.pdb

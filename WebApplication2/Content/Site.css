@@ -1,0 +1,108 @@
+﻿body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+
+/* other */
+
+.taskList {
+    list-style: none;
+    margin-left:0px;
+    padding: 0px;
+}
+.hideButton {
+    display: none;
+}
+
+.user-panel {
+    background-color: #000;
+    color: white;
+    margin-bottom: 3px;
+}
+
+.user-panel .username {
+    color: white;
+    font-size:23px;    
+}
+.user-panel .loginbutton {
+    float: right;
+    margin-top: 10px;
+    width: 100px;
+}
+
+.carousel-caption {
+    font-size: 40px;
+    position: absolute;
+    top: 10px;
+}
+.carousel-image {
+    width: 2048px;
+    margin: -0px;
+    
+}
+.carousel img {
+    top: -400px;
+}
+.carousel-container {
+    
+}
+.carousel {
+    height: 200px;
+    overflow: hidden;
+}
+
+
+.task-item {
+    background-color: #ccc;
+    margin: 3px;
+    padding: 3px;
+}
+.task-item>h1 {
+    color: black;
+}
+
+.task-item .button-bar {
+    float: right;
+}
+
+.task-divider {
+    color: black;
+}
+
+#btn_active, #btn_complete,#btn_archived {
+    float: right;
+    width: 100px;
+    margin-left: 2px;
+}
+
+ 
+.hidePanel {
+    display: none;
+}
+
+
+@media only screen and (min-width : 1024px) {
+    
+}
+  @media only screen and (min-width : 768px) and (max-width : 1023px) {
+      
+  }
+  @media only screen and (max-width : 767px) {
+      .task-item {
+          color: green;
+      }
+  }
+
